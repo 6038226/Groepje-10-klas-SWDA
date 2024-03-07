@@ -11,9 +11,22 @@
 </head>
 <body>
     <header>
-        <article class='een'><a href="Home.php">
-        <img src="fotos/logo2.png" alt="logo"style=width:10vw;height:10vh></a>
+    <article class="links"><a href="Home.php">
+        <img src="fotos/logo2.png" alt="logo"></a></article><article class='boxeen'>
+        <a class="outside style" href="About_us.php"><p class="style">Over Ons</p></a>
     </article>
-    </header>
+    <article class='midden'>
+    <a href="Home.php"><p class="style">Home</p></a>
+    <a href="Gallery.php"><p class="desk style">Gallery</p></a>
+    </article>
+    <article class="midden2">
+        <a class="inside" href="Our_Menu.php"><p class="style">Menu</p></a>
+        <a class="inside" href="About_us.php"><p class="desk style">Over Ons</p></a>
+</article>
+        <article class="rechts"><a href="Home.php">
+        <img src="fotos/beeldmerk.png" alt="logo"></a></article>
+        <article class='boxtwee'><a class="outside" href="Our_Menu.php"><p class="style">Menu</p></a>
+    </article>
+</header>
 </body>
 </html>

@@ -12,19 +12,16 @@
 </head>
 <body>
     <?php include('header.php');?>
-<main>
-    <section id="informatie">
-    <article class="informatie1"></article>
-    <article class="informatie2"></article>
-    </section>
-    <section id="show">
-        <article class="slideshow"><p><img src="#" alt="slideshow" class="slide"></p></article>
-    </section>
-    <section id="info">
-        <article class="informatie3"></article>
-    <article class="informatie4"></article>
-    </section>
-</main>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+<input type="text" name="" id="reseveren" required>
+<input type="text" name="" id="reseveren">
+<input type="text" name="" id="reseveren" required>
+<input type="email" name="" id="reseveren">
+<input type="date" name="" id="reseveren">
+input</form>
     <?php include('footer.php');?>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    ?>
 </body>
 </html>

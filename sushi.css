@@ -1,28 +1,583 @@
-body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: 20vh 60vh 20vh;
-    grid-template-columns: auto auto auto;
+@media only screen and (min-width:0px) and (max-width:199px) {
+    body {
+        visibility: hidden;
+    }
 }
 
-header {
-    background-color: white;
-    grid-row: 1;
-    font-family: 'Alfa Slab One';
-    grid-column: 1/4;
+@media only screen and (min-width:200px) and (max-width:480px) and (orientation: portrait) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        background-color: white;
+        font-family: 'Alfa Slab One';
+        display: grid;
+        align-items: center;
+
+    }
+
+    a:link,
+    a:visited {
+        color: black;
+    }
+
+    .boxeen {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .midden {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .links {
+        object-fit: contain;
+    }
+
+    .boxtwee {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rechts {
+        object-fit: contain;
+    }
+
+    footer {
+        background-color: black;
+        grid-column: 1/4;
+        grid-row: 6;
+
+    }
+
+    .inside {
+        visibility: hidden;
+    }
+
+    .slideshow {
+        visibility: hidden;
+    }
 }
 
-footer {
-    color: white;
-    background-color: black;
-    grid-row: 3;
-    grid-column: 1/4;
-    display: flex;
+@media only screen and (min-width:200px) and (max-width:480px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        background-color: white;
+        font-family: 'Alfa Slab One';
+        display: grid;
+    }
+
+    a:link,
+    a:visited {
+        color: black;
+    }
+
+    .boxeen {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+
+
+    .links {
+        padding-top: 7vh;
+        object-fit: contain;
+    }
+
+    .boxtwee {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rechts {
+        padding-top: 7vh;
+        object-fit: contain;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    .midden {
+        margin-top: 2vh;
+        margin-left: 5vw;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .midden2 {
+        margin-top: 2vh;
+        margin-right: 5vw;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    .outside {
+        visibility: hidden;
+    }
+
+    .slideshow {
+        visibility: hidden;
+    }
 }
 
-.een {
-    margin-top: 2.5vh;
-    margin-left: 2.5vw;
+@media only screen and (min-width:481px) and (max-width:768px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        background-color: white;
+        grid-column: 1/4;
+        grid-row: 1;
+        font-family: 'Alfa Slab One';
+        display: grid;
+    }
+
+    a:link,
+    a:visited {
+        color: black;
+    }
+
+    .boxeen {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+
+
+    .links {
+        padding-top: 7vh;
+        object-fit: contain;
+    }
+
+    .boxtwee {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rechts {
+        padding-top: 7vh;
+        object-fit: contain;
+    }
+
+    footer {
+        background-color: black;
+        grid-column: 1/4;
+        grid-row: 6;
+
+    }
+
+    .midden {
+        margin-top: 2vh;
+        margin-left: 5vw;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .midden2 {
+        margin-top: 2vh;
+        margin-right: 5vw;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    .outside {
+        visibility: hidden;
+    }
+
+    .slideshow {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) and (orientation: portrait) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        background-color: white;
+        grid-column: 1/13;
+        font-family: 'Alfa Slab One';
+        display: grid;
+        align-items: center;
+
+    }
+
+    a:link,
+    a:visited {
+        color: black;
+    }
+
+    .boxeen {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .midden {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .links {
+        object-fit: contain;
+    }
+
+    .boxtwee {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rechts {
+        object-fit: contain;
+    }
+
+    footer {
+        background-color: black;
+        grid-column: 1/4;
+        grid-row: 6;
+
+    }
+
+    .inside {
+        visibility: hidden;
+
+    }
+
+    .slideshow {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1279px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        background-color: white;
+        grid-column: 1/13;
+        font-family: 'Alfa Slab One';
+        display: grid;
+    }
+
+    a:link,
+    a:visited {
+        color: black;
+    }
+
+    .boxeen {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+
+
+    .links {
+        padding-top: 7vh;
+        object-fit: contain;
+    }
+
+    .boxtwee {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rechts {
+        padding-top: 7vh;
+        object-fit: contain;
+    }
+
+    footer {
+        background-color: black;
+        grid-column: 1/4;
+        grid-row: 6;
+
+    }
+
+    .midden {
+        margin-top: 2vh;
+        margin-left: 5vw;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .midden2 {
+        margin-top: 2vh;
+        margin-right: 5vw;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    .outside {
+        visibility: hidden;
+    }
+
+    .slideshow {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1279px) and (orientation: portrait) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        background-color: white;
+        grid-column: 1/13;
+        font-family: 'Alfa Slab One';
+
+    }
+
+    a:link,
+    a:visited {
+        color: black;
+    }
+
+    .boxeen {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .midden {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .links {
+        object-fit: contain;
+    }
+
+    .boxtwee {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rechts {
+        object-fit: contain;
+    }
+
+    footer {
+        background-color: black;
+        grid-column: 1/4;
+        grid-row: 6;
+
+    }
+
+    .inside {
+        visibility: hidden;
+    }
+
+    .slideshow {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width:1280px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 10vh);
+    }
+
+    header {
+        grid-column: 1/13;
+        font-family: 'Alfa Slab One';
+        grid-row: 1/3;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 10vh);
+    }
+
+    a:link,
+    a:visited {
+        color: unset;
+    }
+
+    a:hover {
+        color: SlateGray;
+    }
+
+    a:active {
+        color: unset;
+    }
+
+    .links {
+        grid-column: 1 / 3;
+        grid-row: 1/3;
+    }
+
+    .rechts {
+        grid-column: 12;
+        grid-row: 1/3;
+    }
+
+    .desk {
+        margin-top: 5vh;
+    }
+
+    .midden {
+        grid-column: 5;
+        font-size: 150%;
+        grid-row: 1/3;
+    }
+
+    .midden2 {
+        white-space: nowrap;
+        grid-column: 10;
+        font-size: 150%;
+        grid-row: 1/3;
+    }
+
+    .outside {
+        visibility: hidden;
+    }
+
+    #hamburger {
+        visibility: hidden;
+    }
+
+    footer {
+        font-family: 'Fredericka the Great';
+        display: grid;
+        grid-column: 1/13;
+        color: white;
+        grid-row: 9/11;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(2, 10vh);
+    }
+
+    main {
+        grid-row: 3/9;
+        grid-column: 1/13;
+        display: grid;
+        grid-template-rows: repeat(6, 10vh);
+        grid-template-columns: repeat(10, 1fr);
+
+    }
+
+    #informatie {
+        grid-row: 1/7;
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 30vh);
+    }
+
+    #show {
+        grid-row: 1/7;
+        grid-column: 3/9;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 5vh);
+    }
+
+    .slide {
+        height: 40vh;
+        max-width: 100%;
+    }
+
+    .slideshow {
+        background-color: black;
+        grid-column: 1/13;
+        grid-row: 1/10;
+        text-align: center;
+    }
+
+    .informatie1 {
+        grid-row: 1;
+        grid-column: 1;
+        background-color: red;
+    }
+
+    .informatie2 {
+        grid-row: 2;
+        grid-column: 1;
+        background-color: firebrick;
+    }
+
+    .informatie3 {
+        grid-row: 1;
+        grid-column: 1;
+        background-color: firebrick;
+    }
+
+    .informatie4 {
+        grid-row: 2;
+        grid-column: 1;
+        background-color: red;
+    }
+
+    #info {
+        display: grid;
+        grid-row: 1/7;
+        grid-column: 9/11;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 30vh);
+    }
+
+    .upper {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .uppertext {
+        font-size: 200%;
+    }
+
+    .onder {
+        grid-column: 19/22;
+        grid-row: 1/3;
+    }
+
+    .onderimg {
+        width: 175%;
+        height: auto;
+    }
 }
